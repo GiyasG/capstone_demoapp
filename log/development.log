@@ -576,3 +576,130 @@ Started GET "/" for ::1 at 2017-10-15 18:30:15 +0300
 Processing by UiController#index as HTML
   Rendered ui/index.html.erb (885.2ms)
 Completed 200 OK in 919ms (Views: 918.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-17 12:02:50 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (544.9ms)
+Completed 200 OK in 565ms (Views: 564.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/client-assets/styles.css" for ::1 at 2017-10-17 12:03:19 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/client-assets/scripts.js" for ::1 at 2017-10-17 12:03:19 +0300
+
+
+Started GET "/client-assets/styles.css" for ::1 at 2017-10-17 12:03:22 +0300
+
+
+Started GET "/" for ::1 at 2017-10-17 12:21:52 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (445.7ms)
+Completed 200 OK in 472ms (Views: 470.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-17 12:44:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1756.1ms)
+Completed 200 OK in 1788ms (Views: 1787.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-10-17 12:44:45 +0300
+
+
+Started GET "/assets/spa-demo/app.module.self-6b87d0a39a33d4370a47e0d41f3ef85139b52d3ac2e6168c5f4f9f599a861112.js?body=1" for ::1 at 2017-10-17 12:44:45 +0300
+
+
+Started GET "/assets/jquery/jquery.self-06c43429d1047ce3f355da574d8a9750209971b8b1b8f264f91f5518c5fcc060.js?body=1" for ::1 at 2017-10-17 12:44:45 +0300
+
+
+Started GET "/assets/spa-demo/app.router.self-495bab2dffb9e700c103872d557b05075c94ee3211227dd46ba9e0d2fc420a30.js?body=1" for ::1 at 2017-10-17 12:44:45 +0300
+
+
+Started GET "/assets/spa-demo/app.constant.self-7c7fbd526be038a34f574105dca6eb7ec60a6a82e114c3cbad34bb1ae986e3eb.js?body=1" for ::1 at 2017-10-17 12:44:45 +0300
+
+
+Started GET "/assets/spa-demo.self-80f0502c7b0c3d6999a20e1f451a8e58aa23346913c9c72b753105cc06221339.js?body=1" for ::1 at 2017-10-17 12:44:45 +0300
+
+
+Started GET "/" for ::1 at 2017-10-17 12:46:16 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (558.2ms)
+Completed 200 OK in 578ms (Views: 578.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-17 12:51:57 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (560.7ms)
+Completed 200 OK in 564ms (Views: 563.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.module.self-e432c4ebc3bc62717233f7a31b32a4c7af66ff7d646da70b2d0ca841305e8935.js?body=1" for ::1 at 2017-10-17 12:51:57 +0300
+
+
+Started GET "/" for ::1 at 2017-10-17 12:52:24 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (71.7ms)
+Completed 200 OK in 74ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-17 13:58:39 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1733.0ms)
+Completed 200 OK in 1750ms (Views: 1749.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.module.self-990a06f1903c3cf4b647f1928fdbbadd3117224b17d4d79aa89fe0145e44f093.js?body=1" for ::1 at 2017-10-17 13:58:41 +0300
+
+
+Started GET "/assets/spa-demo/app.router.self-1acf08aeb1f900fde74a09663960989c58344efe1177ed71c02cab887550c50a.js?body=1" for ::1 at 2017-10-17 13:58:41 +0300
+
+
+Started GET "/assets/spa-demo/app.constant.self-4d28221feba6e2575475b6fbd05a2ede698c0f8f1388e12cf41e351af19b49c7.js?body=1" for ::1 at 2017-10-17 13:58:41 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2017-10-17 14:04:51 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (246.0ms)
+Completed 200 OK in 249ms (Views: 248.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-17 14:12:12 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1469.4ms)
+Completed 200 OK in 1515ms (Views: 1514.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.router.self-a66e1c0b01933cd942e680ea9c0191f452ef99c389ef643e75fb5e59b2527785.js?body=1" for ::1 at 2017-10-17 14:12:14 +0300
+
+
+Started GET "/" for ::1 at 2017-10-17 14:12:56 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (572.7ms)
+Completed 200 OK in 576ms (Views: 575.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.router.self-8db4adb42702ea9efd820996117f802cc08777d3685afbb08243e8a0f33ad2d9.js?body=1" for ::1 at 2017-10-17 14:12:56 +0300
+
+
+Started GET "/assets/spa-demo/pages/main-1f5a2bf52f35b9e07ab82edf7fd071f081666bf487333d96932d79f48fa243ff.html" for ::1 at 2017-10-17 14:12:57 +0300
+
+
+Started GET "/" for ::1 at 2017-10-17 14:18:44 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (294.9ms)
+Completed 200 OK in 297ms (Views: 296.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-17 14:21:27 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (170.8ms)
+Completed 200 OK in 173ms (Views: 172.7ms | ActiveRecord: 0.0ms)
