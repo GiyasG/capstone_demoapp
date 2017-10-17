@@ -470,3 +470,109 @@ Processing by BarsController#index as JSON
   Rendered bars/_bar.json.jbuilder (1.1ms)
   Rendered bars/index.json.jbuilder (14.7ms)
 Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-15 18:15:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (51.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (352.9ms)
+Completed 200 OK in 394ms (Views: 394.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo.self-43dfe59f533103c2da512b909bd984776a7825a2202f5b8681ffd8e90b782e57.js?body=1" for ::1 at 2017-10-15 18:15:50 +0300
+
+
+Started GET "/assets/spa-demo.self-978277b9896c77f03b7d73603202f65e6023366de6c618372dec2c303a4e03c7.css?body=1" for ::1 at 2017-10-15 18:15:50 +0300
+
+
+Started GET "/" for ::1 at 2017-10-15 18:23:04 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (3997.6ms)
+Completed 200 OK in 4000ms (Views: 3999.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo.self-c948e20fcf4cf89fdb00bb97bc9f2bfccb16fdebdf3311ae303bba3da4a887d5.css?body=1" for ::1 at 2017-10-15 18:23:08 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap.self-97b6f396f1adb96e6d17bbab5c71d0176ec28a99413c62d21e68e6ed46530268.css?body=1" for ::1 at 2017-10-15 18:23:09 +0300
+
+
+Started GET "/" for ::1 at 2017-10-15 18:25:22 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (44.9ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'angula-resource' with type 'application/javascript'
+Checked in these paths: 
+  /Users/giyas/capstone_demoapp/app/assets/images
+  /Users/giyas/capstone_demoapp/app/assets/javascripts
+  /Users/giyas/capstone_demoapp/app/assets/stylesheets
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-resource-1.6.6/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-ui-router-0.4.2/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-1.6.6/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-1.6.6/app/assets/stylesheets
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/documents
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/fonts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/stylesheets
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-jquery-3.2.1/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts):
+     6:   <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+     7:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     8:   <%= stylesheet_link_tag "spa-demo", :media=>"all"%>
+     9:   <%= javascript_include_tag "spa-demo"%>
+    10:  </head>
+    11:  <body>
+    12: 
+  app/assets/javascripts/spa-demo.js:7
+  app/views/ui/index.html.erb:9:in `_app_views_ui_index_html_erb__3382890156926861221_70346038800640'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (203.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-15 18:25:42 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1518.2ms)
+Completed 200 OK in 1520ms (Views: 1520.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for ::1 at 2017-10-15 18:25:43 +0300
+
+
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-10-15 18:25:43 +0300
+
+
+Started GET "/assets/angular/angular.self-7e0b2baf4553bcd25cbb45cbe35556b3c2fbcb170db636503b5bee55a75e7b9b.js?body=1" for ::1 at 2017-10-15 18:25:43 +0300
+
+
+Started GET "/assets/angular-ui-router/angular-ui-router.self-8d1a567702decda3c48178b8db54b5b9dbe23f0f7b137aca5d7f2fa843efc7e1.js?body=1" for ::1 at 2017-10-15 18:25:43 +0300
+
+
+Started GET "/assets/angular-ui-router.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-10-15 18:25:43 +0300
+
+
+Started GET "/assets/angular-resource.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-10-15 18:25:43 +0300
+
+
+Started GET "/assets/spa-demo.self-aeccc103f2ac0896809f2850e7c157b8508ef61597a8d64df8931f184adab8e6.js?body=1" for ::1 at 2017-10-15 18:25:43 +0300
+
+
+Started GET "/assets/bootstrap.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-10-15 18:25:44 +0300
+
+
+Started GET "/assets/angular-resource/angular-resource.self-7b851344b1a492da37e76df63192ad79f4329101cce7e0de82613e234810e484.js?body=1" for ::1 at 2017-10-15 18:25:44 +0300
+
+
+Started GET "/assets/jquery2.self-25ca496239ae8641a09627c8aace5863e7676e465fbb4ce81bc7eb78c4d15627.js?body=1" for ::1 at 2017-10-15 18:25:44 +0300
+
+
+Started GET "/" for ::1 at 2017-10-15 18:30:15 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (885.2ms)
+Completed 200 OK in 919ms (Views: 918.5ms | ActiveRecord: 0.0ms)
