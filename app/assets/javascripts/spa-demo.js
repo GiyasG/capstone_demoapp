@@ -1,4 +1,4 @@
-// Spa Demo amnifest file
+// Spa Demo manifest file
 //= require jquery2
 //= require jquery
 //= require angular
@@ -8,3 +8,8 @@
 //= require spa-demo/app.module
 //= require spa-demo/app.router
 //= require spa-demo/app.constant
+
+//= require spa-demo/foos/foos.module
+//= require spa-demo/foos/foos.service
+//= require spa-demo/foos/foos.controller
+//= require spa-demo/foos/foos.directive
