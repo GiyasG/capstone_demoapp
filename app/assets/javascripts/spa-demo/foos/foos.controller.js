@@ -1,11 +1,11 @@
 (function() {
-    'use strict';
+    "use strict";
 
 
     //  Module
     angular
-        .module('spa-demo.foos')
-        .controller('spa-demo.foos.FoosController', FoosController);
+        .module("spa-demo.foos")
+        .controller("spa-demo.foos.FoosController", FoosController);
 
     //  Controller Controller
     FoosController.$inject = ["spa-demo.foos.Foo"];

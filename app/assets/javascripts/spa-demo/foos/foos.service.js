@@ -1,9 +1,9 @@
 (function() {
-    'use strict';
+    "use strict";
     //  Module
     angular
-        .module('spa-demo.foos')
-        .factory('spa-demo.foos.Foo', FooFactory);
+        .module("spa-demo.foos")
+        .factory("spa-demo.foos.Foo", FooFactory);
     //  factory factory
     FooFactory.$inject =  ["$resource", "spa-demo.APP_CONFIG"];
     function FooFactory($resource, APP_CONFIG) {
