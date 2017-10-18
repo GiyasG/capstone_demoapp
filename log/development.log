@@ -876,3 +876,390 @@ Started GET "/" for ::1 at 2017-10-18 14:17:05 +0300
 Processing by UiController#index as HTML
   Rendered ui/index.html.erb (1351.2ms)
 Completed 200 OK in 1393ms (Views: 1392.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 14:22:49 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1889.6ms)
+Completed 200 OK in 1944ms (Views: 1943.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 14:29:08 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1300.2ms)
+Completed 200 OK in 1337ms (Views: 1337.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 14:29:19 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (46.7ms)
+Completed 200 OK in 49ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 14:36:36 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (2613.6ms)
+Completed 200 OK in 2616ms (Views: 2615.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-ad019cda287ee12fad3c7e47898bc256db9983ebe7ba7957205299d338bf7120.js?body=1" for ::1 at 2017-10-18 14:36:39 +0300
+
+
+Started GET "/" for ::1 at 2017-10-18 14:37:00 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (612.6ms)
+Completed 200 OK in 615ms (Views: 614.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 14:43:29 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (820.0ms)
+Completed 200 OK in 822ms (Views: 821.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/foos/foos.directive.self-ea601db86017f727abe1d0d644ad0ffff6a177e1bdfd81daa2a4641498fce4b2.js?body=1" for ::1 at 2017-10-18 14:43:30 +0300
+
+
+Started GET "/" for ::1 at 2017-10-18 14:46:07 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (642.9ms)
+Completed 200 OK in 645ms (Views: 645.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-947bdc77f3cc0e80deefd61e8eac41e960e7f8628a467e697c8fb3ce620f5249.js?body=1" for ::1 at 2017-10-18 14:46:08 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos.directive.self-690f368d9b38a70e63edf0c3846d8e25225d6c269c5559a325654d473c3ccbe1.js?body=1" for ::1 at 2017-10-18 14:46:08 +0300
+
+
+Started GET "/" for ::1 at 2017-10-18 14:51:44 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (305.2ms)
+Completed 500 Internal Server Error in 308ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'spa-demo/foos/foos.directive' with type 'application/javascript'
+Checked in these paths: 
+  /Users/giyas/capstone_demoapp/app/assets/images
+  /Users/giyas/capstone_demoapp/app/assets/javascripts
+  /Users/giyas/capstone_demoapp/app/assets/stylesheets
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-resource-1.6.6/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-ui-router-0.4.2/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-1.6.6/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-1.6.6/app/assets/stylesheets
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/documents
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/fonts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/stylesheets
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-jquery-3.2.1/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts):
+     6:   <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+     7:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     8:   <%= stylesheet_link_tag "spa-demo", :media=>"all"%>
+     9:   <%= javascript_include_tag "spa-demo"%>
+    10:  </head>
+    11:  <body>
+    12: 
+  app/assets/javascripts/spa-demo.js:15
+  app/views/ui/index.html.erb:9:in `_app_views_ui_index_html_erb__3575240832915987622_70224435168400'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (147.7ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 14:53:03 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (687.5ms)
+Completed 200 OK in 690ms (Views: 689.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 14:59:32 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (86.9ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'spa-demo/foos/foo.directive' with type 'application/javascript'
+Checked in these paths: 
+  /Users/giyas/capstone_demoapp/app/assets/images
+  /Users/giyas/capstone_demoapp/app/assets/javascripts
+  /Users/giyas/capstone_demoapp/app/assets/stylesheets
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-resource-1.6.6/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-ui-router-0.4.2/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-1.6.6/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-angular-1.6.6/app/assets/stylesheets
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/documents
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/fonts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-bootstrap-3.3.7/app/assets/stylesheets
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/rails-assets-jquery-3.2.1/app/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts):
+     6:   <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+     7:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     8:   <%= stylesheet_link_tag "spa-demo", :media=>"all"%>
+     9:   <%= javascript_include_tag "spa-demo"%>
+    10:  </head>
+    11:  <body>
+    12: 
+  app/assets/javascripts/spa-demo.js:15
+  app/views/ui/index.html.erb:9:in `_app_views_ui_index_html_erb__3575240832915987622_70224435168400'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.1ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (158.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 14:59:50 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (813.0ms)
+Completed 200 OK in 815ms (Views: 815.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/foos/foos.module.self-0ef17cf4219d31f6c554e4b98f958fa7f4b14410870139b93379f6de6738975c.js?body=1" for ::1 at 2017-10-18 14:59:51 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos.service.self-23c42b126c9b875c5c2416d40becc145fe4a7b23b8f7587e065c6e5a2881b3b3.js?body=1" for ::1 at 2017-10-18 14:59:51 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos.controller.self-446ffaf4d5b656a618af9f036fee8ad709c7b29126ca8a2c1abc40a34870de79.js?body=1" for ::1 at 2017-10-18 14:59:51 +0300
+
+
+Started GET "/" for ::1 at 2017-10-18 15:00:54 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (53.3ms)
+Completed 200 OK in 56ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 15:01:49 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1496.1ms)
+Completed 200 OK in 1535ms (Views: 1535.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 15:01:56 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (120.2ms)
+Completed 200 OK in 123ms (Views: 122.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 15:15:59 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (954.1ms)
+Completed 200 OK in 958ms (Views: 957.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-b4ac66097cb1886326f96a8a69a759494cab1d2d7fc64530718743cd71b60ac8.js?body=1" for ::1 at 2017-10-18 15:16:01 +0300
+
+
+Started GET "/" for ::1 at 2017-10-18 15:17:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1473.5ms)
+Completed 200 OK in 1514ms (Views: 1513.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 15:19:40 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (42.6ms)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 15:19:45 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (47.2ms)
+Completed 200 OK in 49ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 15:21:50 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1027.9ms)
+Completed 200 OK in 1030ms (Views: 1030.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-3cfbe49609e600b77548eee2fcd35c90c5599369c160bdf2d932325b2ddbf211.js?body=1" for ::1 at 2017-10-18 15:21:52 +0300
+
+
+Started GET "/" for ::1 at 2017-10-18 15:22:53 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (715.7ms)
+Completed 200 OK in 718ms (Views: 717.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-906f3c63821673cbae7f6437f616ed16c791cfb4da96edecb93e84f559d91c6f.js?body=1" for ::1 at 2017-10-18 15:22:53 +0300
+
+
+Started GET "/" for ::1 at 2017-10-18 15:24:05 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (614.2ms)
+Completed 200 OK in 616ms (Views: 616.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-3a4a8876f9da0181d8823eece0fbfef6cf04755bb51ed195855967e161966f2c.js?body=1" for ::1 at 2017-10-18 15:24:06 +0300
+
+
+Started GET "/assets/spa-demo/pages/main-89b8d8a0aea6021e0014d8cbd661823cf2971f0a9fc5cdc983c106127d1920d1.html" for ::1 at 2017-10-18 15:24:06 +0300
+
+
+Started GET "/" for ::1 at 2017-10-18 15:24:24 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (143.2ms)
+Completed 200 OK in 146ms (Views: 145.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 15:28:19 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1085.4ms)
+Completed 200 OK in 1130ms (Views: 1129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 16:03:10 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (3238.3ms)
+Completed 200 OK in 3280ms (Views: 3279.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 16:03:14 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (62.7ms)
+Completed 200 OK in 65ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for ::1 at 2017-10-18 16:03:33 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (126.7ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (3.6ms)
+  Rendered foos/_foo.json.jbuilder (1.9ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.7ms)
+  Rendered foos/index.json.jbuilder (579.4ms)
+Completed 200 OK in 635ms (Views: 219.5ms | ActiveRecord: 393.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 16:03:42 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (125.6ms)
+Completed 200 OK in 129ms (Views: 128.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 16:09:21 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1309.7ms)
+Completed 200 OK in 1354ms (Views: 1353.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 16:18:54 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (2346.5ms)
+Completed 200 OK in 2368ms (Views: 2367.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo.self-914791e765346d07066be8ad42e93234df906fdc8139d60b823504aeadb8978c.css?body=1" for ::1 at 2017-10-18 16:18:56 +0300
+
+
+Started GET "/assets/spa-demo/layout.self-93faddccb45f4f1c38000de2aac4fd66a0b521d4be4b5007626798428fa703a2.css?body=1" for ::1 at 2017-10-18 16:18:56 +0300
+
+
+Started GET "/" for ::1 at 2017-10-18 16:43:53 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (2369.8ms)
+Completed 200 OK in 2418ms (Views: 2418.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.module.self-3e460bfc5fd473d3e7b2c827592b2fe38ff8e1a709a6648b143f03f0d0ffe2e8.js?body=1" for ::1 at 2017-10-18 16:43:56 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos-3f8ebe96589d5f63ab8b3de8e4138780872982f87bb63b0093364558ecbd7db3.html" for ::1 at 2017-10-18 16:43:57 +0300
+  [1m[36m (14.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (101.0ms)[0m  INSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "test1"], ["created_at", "2017-10-18 14:06:09.068160"], ["updated_at", "2017-10-18 14:06:09.068160"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2017-10-18 14:06:09.219598"], ["updated_at", "2017-10-18 14:06:09.219598"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "test3"], ["created_at", "2017-10-18 14:06:09.222840"], ["updated_at", "2017-10-18 14:06:09.222840"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2017-10-18 14:06:09.225831"], ["updated_at", "2017-10-18 14:06:09.225831"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "test5"], ["created_at", "2017-10-18 14:06:09.228740"], ["updated_at", "2017-10-18 14:06:09.228740"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2017-10-18 17:26:44 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (2037.5ms)
+Completed 200 OK in 2080ms (Views: 2080.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-9cb449c9b66da493048e5ce05ed60454496221f7fe3200a7efc55f85c43335a6.js?body=1" for ::1 at 2017-10-18 17:26:46 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos-aae979c5d45b3b002c92633a40b33bda360193c6921191a199091853b9c57ffe.html" for ::1 at 2017-10-18 17:26:47 +0300
+
+
+Started GET "/" for ::1 at 2017-10-18 17:28:03 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (774.1ms)
+Completed 200 OK in 777ms (Views: 777.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/foos/foos.controller.self-9df6d9ef1471c3ff81b4d3585bd8c16f501971a94921e7a34bdbdf2180ff7d63.js?body=1" for ::1 at 2017-10-18 17:28:04 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-18 17:28:05 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (0.8ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (3.8ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/index.json.jbuilder (99.9ms)
+Completed 200 OK in 137ms (Views: 105.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 17:29:40 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (542.1ms)
+Completed 200 OK in 546ms (Views: 545.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-5214a0e50c607da0532fa3473ede7ef86dbfe7401185547cd9b811ed2810d7d9.js?body=1" for ::1 at 2017-10-18 17:29:41 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos-b0712bb67ab9051e78039ba303c635c7c20a32fd2ac56e9f26707456a5c4d6be.html" for ::1 at 2017-10-18 17:29:41 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-18 17:29:41 +0300
+Processing by FoosController#index as JSON
+  [1m[36mFoo Load (6.2ms)[0m  [1mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.7ms)
+  Rendered foos/_foo.json.jbuilder (9.7ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (4.4ms)
+  Rendered foos/_foo.json.jbuilder (2.4ms)
+  Rendered foos/_foo.json.jbuilder (2.3ms)
+  Rendered foos/index.json.jbuilder (48.8ms)
+Completed 200 OK in 64ms (Views: 57.5ms | ActiveRecord: 6.2ms)

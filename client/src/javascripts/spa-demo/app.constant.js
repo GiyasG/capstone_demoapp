@@ -10,7 +10,7 @@
 
           main_page_html: "spa-demo/pages/main.html",
 
-          foos_html: "spa-demo/foos/foos.html",
+          foos_html: "spa-demo/foos/foos.html"
         });
 
 })();
