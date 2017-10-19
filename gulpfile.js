@@ -56,7 +56,7 @@ var cfg={
   vendor_fonts : { bld: vendorBuildPath + "/stylesheets/fonts" },
 
   apiUrl: { dev: "http://localhost:3000",
-            prd: "https://sheltered-earth-99575.herokuapp.com/"},
+            prd: "https://sheltered-earth-99575.herokuapp.com"},
 };
 
 //files within these paths will be served as root-level resources in this priority order
@@ -155,7 +155,7 @@ gulp.task("run", ["build", "browserSync"], function (){
 gulp.task("dist:assets", ["build"], function(){
   return gulp.src(cfg.root_html.src).pipe(debug())
     .pipe(useref({ searchPath: devResourcePath }))
-    .pipe(gulpif(["**/*.js"], replace(cfg.apiUrl.dev,cfg.apiUrl.prd))) //change URLs
+    .pipe(gulpif(["**/*.js"], replace(cfg.apiUrl.dev, cfg.apiUrl.prd))) //change URLs
     .pipe(gulpif(["**/*.js"], uglify()))  //minify JS
     .pipe(gulpif(["**/*.css"], cssMin())) //minify CSS
     .pipe(gulp.dest(distPath)).pipe(debug());
