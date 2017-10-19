@@ -6,5 +6,4 @@
           "ui.router",
           "spa-demo.foos"
         ]);
-
 })();

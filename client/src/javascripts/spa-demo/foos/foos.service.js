@@ -1,6 +1,6 @@
 (function() {
     "use strict";
-    //  Module
+    // Module
     angular
         .module("spa-demo.foos")
         .factory("spa-demo.foos.Foo", FooFactory);

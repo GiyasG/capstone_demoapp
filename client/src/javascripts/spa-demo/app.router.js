@@ -18,7 +18,6 @@
           // controller: ,
           // controllerAs: ,
         })
-
         $urlRouterProvider.otherwise("/");
       }
 })();

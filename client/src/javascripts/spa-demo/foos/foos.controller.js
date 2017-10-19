@@ -7,7 +7,7 @@
         .module("spa-demo.foos")
         .controller("spa-demo.foos.FoosController", FoosController);
 
-    //  Controller Controller
+    //  ontroller
     FoosController.$inject = ["spa-demo.foos.Foo"];
     function FoosController(Foo) {
         var vm  =  this;
@@ -29,11 +29,13 @@
         function newFoo() {
           vm.foo = new Foo();
         }
+
         function handleError(response) {
           console.log(response);
         }
+
         function edit(object) {
-          console.log("selected", object);
+          //console.log("selected", object);
           vm.foo = object;
         }
 

@@ -7,5 +7,4 @@
         .module("spa-demo.foos", [
             "ngResource"
         ]);
-
 })();

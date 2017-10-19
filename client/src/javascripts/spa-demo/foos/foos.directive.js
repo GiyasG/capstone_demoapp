@@ -24,5 +24,4 @@
       console.log("FoosDirective", scope);
     }
   }
-
 })();
