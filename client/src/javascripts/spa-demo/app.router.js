@@ -5,7 +5,10 @@
         .module("spa-demo")
         .config(RouterFunction);
 
-      RouterFunction.$inject = ["$stateProvider", "$urlRouterProvider", "spa-demo.APP_CONFIG"];
+      RouterFunction.$inject = ["$stateProvider",
+                                "$urlRouterProvider",
+                                "spa-demo.APP_CONFIG"
+                                ];
 
       function RouterFunction($stateProvider, $urlRouterProvider, APP_CONFIG) {
         $stateProvider

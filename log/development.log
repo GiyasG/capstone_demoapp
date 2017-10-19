@@ -2809,3 +2809,62 @@ ActionController::RoutingError (No route matches [GET] "/client/index.html"):
   Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (88.1ms)
   Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
   Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (370.7ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 16:10:03 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1519.7ms)
+Completed 200 OK in 1528ms (Views: 1527.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 16:10:05 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (1.4ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (4.3ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (2.1ms)
+  Rendered foos/_foo.json.jbuilder (3.1ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/index.json.jbuilder (128.4ms)
+Completed 200 OK in 191ms (Views: 106.3ms | ActiveRecord: 53.0ms)
+
+
+Started GET "/client-assets/styles.css" for ::1 at 2017-10-19 16:10:39 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/client-assets/scripts.js" for ::1 at 2017-10-19 16:10:39 +0300
+
+
+Started GET "/spa-demo/pages/main.html" for ::1 at 2017-10-19 16:10:39 +0300
+
+ActionController::RoutingError (No route matches [GET] "/spa-demo/pages/main.html"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (56.1ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (247.7ms)

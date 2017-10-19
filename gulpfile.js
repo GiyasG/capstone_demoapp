@@ -129,8 +129,8 @@ gulp.task("build", sync.sync(["clean:build", ["vendor_css", "vendor_js", "vendor
 function browserSyncInit(baseDir, watchFiles) {
   browserSync.instance = browserSync.init(watchFiles, {
     server: { baseDir: baseDir },
-    port:   8080,
-    ui:     { port: 8090 }
+    port: 8080,
+    ui: { port: 8090 }
   });
 };
 
