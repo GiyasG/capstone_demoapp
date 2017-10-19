@@ -9,10 +9,17 @@
     function FooFactory($resource, APP_CONFIG) {
       return $resource(APP_CONFIG.server_url + "api/foos/:id",
         { id: '@id'},
-        { update: {method: "PUT" }
+        {
+            update: {method: "PUT",
+            transformRequest: buildNestedBody },
+            save: {method: "POST",
+            transformRequest: buildNestedBody }
         }
         );
-      // function Foo() {
+      // nests the default payload below a "foo" element as required by default by Rails API resource
+      function buildNestedBody(data) {
+        return angular.toJson({foo: data});
+      }
       // }
       //
       // Foo.prototype.method = function() {
