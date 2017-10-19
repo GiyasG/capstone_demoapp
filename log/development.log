@@ -1263,3 +1263,1549 @@ Processing by FoosController#index as JSON
   Rendered foos/_foo.json.jbuilder (2.3ms)
   Rendered foos/index.json.jbuilder (48.8ms)
 Completed 200 OK in 64ms (Views: 57.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 09:54:54 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (54.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (2273.2ms)
+Completed 200 OK in 2326ms (Views: 2326.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 09:55:00 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (66.4ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (3.8ms)
+  Rendered foos/_foo.json.jbuilder (2.3ms)
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.8ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/index.json.jbuilder (295.9ms)
+Completed 200 OK in 326ms (Views: 128.4ms | ActiveRecord: 176.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 09:55:09 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (570.2ms)
+Completed 200 OK in 573ms (Views: 572.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-9d0b68db3a50e3c25fc0f4c6d170436047c7e668f426de89d19971ae0645c61f.js?body=1" for ::1 at 2017-10-19 09:55:10 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos-d3f5c8b14655fbc5812e1cd153bb05e36b1a1a840fd1fd41b96a43e152ca32b8.html" for ::1 at 2017-10-19 09:55:11 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 09:55:11 +0300
+Processing by FoosController#index as JSON
+  [1m[36mFoo Load (0.4ms)[0m  [1mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/index.json.jbuilder (20.4ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 10:05:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1427.6ms)
+Completed 200 OK in 1445ms (Views: 1445.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-3894a2a7f7642accf5052f89bf59046ba50fa001d2446e78a19bf1840ae84be1.js?body=1" for ::1 at 2017-10-19 10:05:49 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos.controller.self-eb94501f2fecdac2e466e21fcc01efd0c9e6f7b79e66c06ba579bc53e2813c7e.js?body=1" for ::1 at 2017-10-19 10:05:50 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos-d5cc039c73243e38dd1da187c7858005b07969fa3fd89db510aa55ea4801ed1d.html" for ::1 at 2017-10-19 10:05:50 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 10:05:50 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (0.6ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (2.9ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.7ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.7ms)
+  Rendered foos/_foo.json.jbuilder (1.7ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/index.json.jbuilder (65.1ms)
+Completed 200 OK in 93ms (Views: 71.9ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/api/foos" for ::1 at 2017-10-19 10:05:55 +0300
+Processing by FoosController#create as JSON
+  Parameters: {"name"=>"hello"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: foo):
+  app/controllers/foos_controller.rb:44:in `foo_params'
+  app/controllers/foos_controller.rb:14:in `create'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (154.8ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 10:15:29 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (527.4ms)
+Completed 200 OK in 530ms (Views: 529.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/foos/foos.service.self-ec0541e71a014574d52329cce3a4fa7e07bd7684be1d2d60543cbe57f45e7dbb.js?body=1" for ::1 at 2017-10-19 10:15:29 +0300
+
+
+Started GET "/" for ::1 at 2017-10-19 10:15:36 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (43.8ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 10:17:18 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (574.8ms)
+Completed 200 OK in 577ms (Views: 577.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/foos/foos.service.self-de2e5c2a315f8f7df2fd95c79882148aa1f3067f32b773f90b798dfec46c33a6.js?body=1" for ::1 at 2017-10-19 10:17:18 +0300
+
+
+Started GET "/" for ::1 at 2017-10-19 10:17:41 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (486.7ms)
+Completed 200 OK in 489ms (Views: 489.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/foos/foos.service.self-7f11cf4f8b53cb6906bb820a2be376f494344cc7c93cd5573ce2a7c1cee8917d.js?body=1" for ::1 at 2017-10-19 10:17:41 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 10:17:42 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (0.4ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.8ms)
+  Rendered foos/_foo.json.jbuilder (3.1ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/index.json.jbuilder (25.4ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/foos" for ::1 at 2017-10-19 10:17:48 +0300
+Processing by FoosController#create as JSON
+  Parameters: {"foo"=>{"name"=>"hello"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (67.0ms)[0m  INSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "hello"], ["created_at", "2017-10-19 07:17:48.243893"], ["updated_at", "2017-10-19 07:17:48.243893"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  Rendered foos/_foo.json.jbuilder (0.7ms)
+  Rendered foos/show.json.jbuilder (3.1ms)
+Completed 201 Created in 119ms (Views: 25.2ms | ActiveRecord: 68.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 10:28:21 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (600.1ms)
+Completed 200 OK in 602ms (Views: 602.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/foos/foos.controller.self-115c7b3ef6aedeb6391e8752c9f7caf6914f7ca38fe2038256093ed094e184e4.js?body=1" for ::1 at 2017-10-19 10:28:22 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 10:28:23 +0300
+Processing by FoosController#index as JSON
+  [1m[36mFoo Load (0.5ms)[0m  [1mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.6ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/index.json.jbuilder (28.3ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 10:32:20 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (495.9ms)
+Completed 200 OK in 498ms (Views: 497.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-098c20e5e3e528fe6bf7b2352ec7d8cd586e291cb673426abf7a0bc5ce730211.js?body=1" for ::1 at 2017-10-19 10:32:20 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos-c847c19bfee8bf61096e9d86c11e8c20803f7a40d6960dd9984dd8a1bbdd283d.html" for ::1 at 2017-10-19 10:32:21 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 10:32:21 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (0.4ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (2.4ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (3.3ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (2.5ms)
+  Rendered foos/_foo.json.jbuilder (1.6ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.7ms)
+  Rendered foos/index.json.jbuilder (34.2ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 10:36:09 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (524.8ms)
+Completed 200 OK in 527ms (Views: 526.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.constant.self-3fd2dc29ee947460849758157c8eaf3c6de50d0e1036f564f04ffbe532b5dee2.js?body=1" for ::1 at 2017-10-19 10:36:10 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos.controller.self-8f531c608b0e01a18f1ea5eaba8adb250e65229d18f0e400c5d9603293db8acb.js?body=1" for ::1 at 2017-10-19 10:36:10 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos-7e6c6f5e12e7bb68005a2d80cdf04a32794f799fdcbee5f3d650dc7126ea13f6.html" for ::1 at 2017-10-19 10:36:11 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 10:36:11 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (0.4ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (3.2ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (6.5ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (7.1ms)
+  Rendered foos/_foo.json.jbuilder (1.6ms)
+  Rendered foos/_foo.json.jbuilder (3.0ms)
+  Rendered foos/_foo.json.jbuilder (2.5ms)
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/index.json.jbuilder (50.3ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/foos/2" for ::1 at 2017-10-19 10:36:49 +0300
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>2, "name"=>"test0", "created_at"=>"2017-10-09T08:17:05.588Z", "updated_at"=>"2017-10-09T08:17:05.588Z", "url"=>"http://localhost:3000/api/foos/2"}, "id"=>"2"}
+  [1m[36mFoo Load (0.4ms)[0m  [1mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id, created_at, updated_at, url
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "foos" SET "name" = $1, "updated_at" = $2 WHERE "foos"."id" = $3[0m  [["name", "test0"], ["updated_at", "2017-10-19 07:36:49.440224"], ["id", 2]]
+  [1m[35m (15.9ms)[0m  COMMIT
+Completed 204 No Content in 83ms (ActiveRecord: 17.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 10:45:21 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (533.7ms)
+Completed 200 OK in 536ms (Views: 535.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/foos/foos.controller.self-673d41c84141ce26e283f4310af650eaa60f0f4410c28e8ea140cc5a6a9ee193.js?body=1" for ::1 at 2017-10-19 10:45:22 +0300
+
+
+Started GET "/" for ::1 at 2017-10-19 10:46:01 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (508.7ms)
+Completed 200 OK in 511ms (Views: 510.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/foos/foos.controller.self-2fa206c669bf51d9d1e127b3668c45a2846b654b0f10886d3b1de90d6e2466bd.js?body=1" for ::1 at 2017-10-19 10:46:01 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 10:46:02 +0300
+Processing by FoosController#index as JSON
+  [1m[36mFoo Load (0.5ms)[0m  [1mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (2.3ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (2.0ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/index.json.jbuilder (34.9ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/api/foos/10" for ::1 at 2017-10-19 10:46:08 +0300
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"10"}
+  [1m[35mFoo Load (1.2ms)[0m  SELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "foos" WHERE "foos"."id" = $1  [["id", 10]]
+  [1m[36m (15.5ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 20ms (ActiveRecord: 17.1ms)
+
+
+Started DELETE "/api/foos/1" for ::1 at 2017-10-19 10:46:10 +0300
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mFoo Load (0.5ms)[0m  SELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "foos" WHERE "foos"."id" = $1  [["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/foos/2" for ::1 at 2017-10-19 10:46:12 +0300
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mFoo Load (1.4ms)[0m  SELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "foos" WHERE "foos"."id" = $1  [["id", 2]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 5ms (ActiveRecord: 2.6ms)
+
+
+Started DELETE "/api/foos/6" for ::1 at 2017-10-19 10:46:15 +0300
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"6"}
+  [1m[35mFoo Load (0.3ms)[0m  SELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "foos" WHERE "foos"."id" = $1  [["id", 6]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/foos/4" for ::1 at 2017-10-19 10:46:17 +0300
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mFoo Load (0.4ms)[0m  SELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "foos" WHERE "foos"."id" = $1  [["id", 4]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 11:45:58 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (2660.1ms)
+Completed 200 OK in 2740ms (Views: 2739.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 11:46:02 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (0.8ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (3.5ms)
+  Rendered foos/_foo.json.jbuilder (1.9ms)
+  Rendered foos/_foo.json.jbuilder (1.9ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/index.json.jbuilder (99.6ms)
+Completed 200 OK in 184ms (Views: 148.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 11:57:34 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (3286.0ms)
+Completed 200 OK in 3330ms (Views: 3329.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/app.router.self-6352452f80c5a8e54423922833953d7a1d7364db12b79b52fd2ee92db1f3589b.js?body=1" for ::1 at 2017-10-19 11:57:38 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 11:57:39 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (0.7ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (3.5ms)
+  Rendered foos/_foo.json.jbuilder (1.7ms)
+  Rendered foos/_foo.json.jbuilder (2.4ms)
+  Rendered foos/_foo.json.jbuilder (3.4ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/index.json.jbuilder (91.8ms)
+Completed 200 OK in 140ms (Views: 103.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/index.html" for ::1 at 2017-10-19 12:11:53 +0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.9ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (114.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (348.9ms)
+
+
+Started GET "/index.html/" for ::1 at 2017-10-19 12:12:03 +0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (169.5ms)
+
+
+Started GET "/client/index.html/client-assets/styles.css" for ::1 at 2017-10-19 12:13:10 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/styles.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (192.1ms)
+
+
+Started GET "/client/index.html/client-assets/scripts.js" for ::1 at 2017-10-19 12:13:10 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/scripts.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (170.2ms)
+
+
+Started GET "/client/index.html/client-assets/styles.css" for ::1 at 2017-10-19 12:15:10 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/styles.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (191.9ms)
+
+
+Started GET "/client/index.html/client-assets/scripts.js" for ::1 at 2017-10-19 12:15:11 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/scripts.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (186.4ms)
+
+
+Started GET "/client/index.html/public/client-assets/styles.css" for ::1 at 2017-10-19 12:16:00 +0300
+
+
+Started GET "/client/index.html/public/client-assets/scripts.js" for ::1 at 2017-10-19 12:16:00 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/public/client-assets/styles.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/public/client-assets/scripts.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (247.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (179.9ms)
+
+
+Started GET "/public/client/index.html/" for ::1 at 2017-10-19 12:17:31 +0300
+
+ActionController::RoutingError (No route matches [GET] "/public/client/index.html"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (171.8ms)
+
+
+Started GET "/client/index.html/public/client-assets/styles.css" for ::1 at 2017-10-19 12:17:39 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/public/client-assets/styles.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+
+
+Started GET "/client/index.html/public/client-assets/scripts.js" for ::1 at 2017-10-19 12:17:39 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/public/client-assets/scripts.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (33.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (293.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (226.5ms)
+
+
+Started GET "/client/index.html/client-assets/styles.css" for ::1 at 2017-10-19 12:18:11 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/styles.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+
+
+Started GET "/client/index.html/client-assets/scripts.js" for ::1 at 2017-10-19 12:18:11 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/scripts.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.8ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (425.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (348.1ms)
+
+
+Started GET "/client/index.html/client-assets/styles.css" for ::1 at 2017-10-19 12:34:47 +0300
+
+
+Started GET "/client/index.html/client-assets/scripts.js" for ::1 at 2017-10-19 12:34:47 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/styles.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/scripts.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (57.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (44.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (249.5ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (251.1ms)
+
+
+Started GET "/client/index.html/client-assets/scripts.js" for ::1 at 2017-10-19 12:38:39 +0300
+
+
+Started GET "/client/index.html/client-assets/styles.css" for ::1 at 2017-10-19 12:38:39 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/scripts.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/styles.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.1ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (20.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (303.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (301.9ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 12:38:46 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1699.8ms)
+Completed 200 OK in 1710ms (Views: 1709.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 12:38:49 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (0.7ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (3.1ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/index.json.jbuilder (60.3ms)
+Completed 200 OK in 99ms (Views: 66.6ms | ActiveRecord: 5.3ms)
+
+
+Started PUT "/api/foos/5" for ::1 at 2017-10-19 12:38:56 +0300
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>5, "name"=>"test1", "created_at"=>"2017-10-18T14:06:09.068Z", "updated_at"=>"2017-10-18T14:06:09.068Z", "url"=>"http://localhost:3000/api/foos/5"}, "id"=>"5"}
+  [1m[36mFoo Load (0.4ms)[0m  [1mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1[0m  [["id", 5]]
+Unpermitted parameters: id, created_at, updated_at, url
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 87ms (ActiveRecord: 1.4ms)
+
+
+Started PUT "/api/foos/5" for ::1 at 2017-10-19 12:39:08 +0300
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>5, "name"=>"add", "created_at"=>"2017-10-18T14:06:09.068Z", "updated_at"=>"2017-10-18T14:06:09.068Z", "url"=>"http://localhost:3000/api/foos/5"}, "id"=>"5"}
+  [1m[35mFoo Load (0.3ms)[0m  SELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1  [["id", 5]]
+Unpermitted parameters: id, created_at, updated_at, url
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "foos" SET "name" = $1, "updated_at" = $2 WHERE "foos"."id" = $3  [["name", "add"], ["updated_at", "2017-10-19 09:39:08.392958"], ["id", 5]]
+  [1m[36m (12.3ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 19ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 12:39:29 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (94.8ms)
+Completed 200 OK in 98ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 12:39:30 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (1.7ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (1.5ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (2.8ms)
+  Rendered foos/_foo.json.jbuilder (2.8ms)
+  Rendered foos/index.json.jbuilder (32.9ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/api/foos/5" for ::1 at 2017-10-19 12:39:34 +0300
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mFoo Load (0.4ms)[0m  [1mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "foos" WHERE "foos"."id" = $1[0m  [["id", 5]]
+  [1m[35m (15.8ms)[0m  COMMIT
+Completed 204 No Content in 21ms (ActiveRecord: 16.6ms)
+
+
+Started POST "/api/foos" for ::1 at 2017-10-19 12:39:47 +0300
+Processing by FoosController#create as JSON
+  Parameters: {"foo"=>{"name"=>"test1"}}
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (36.3ms)[0m  INSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "test1"], ["created_at", "2017-10-19 09:39:47.834210"], ["updated_at", "2017-10-19 09:39:47.834210"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  Rendered foos/_foo.json.jbuilder (0.7ms)
+  Rendered foos/show.json.jbuilder (4.2ms)
+Completed 201 Created in 95ms (Views: 52.3ms | ActiveRecord: 37.8ms)
+
+
+Started PUT "/api/foos/11" for ::1 at 2017-10-19 12:39:55 +0300
+Processing by FoosController#update as JSON
+  Parameters: {"foo"=>{"id"=>11, "name"=>"test11", "created_at"=>"2017-10-19T09:39:47.834Z", "updated_at"=>"2017-10-19T09:39:47.834Z", "url"=>"http://localhost:3000/api/foos/11"}, "id"=>"11"}
+  [1m[35mFoo Load (0.4ms)[0m  SELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1  [["id", 11]]
+Unpermitted parameters: id, created_at, updated_at, url
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "foos" SET "name" = $1, "updated_at" = $2 WHERE "foos"."id" = $3  [["name", "test11"], ["updated_at", "2017-10-19 09:39:55.572462"], ["id", 11]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 7ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/api/foos/11" for ::1 at 2017-10-19 12:40:02 +0300
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"11"}
+  [1m[35mFoo Load (0.4ms)[0m  SELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "foos" WHERE "foos"."id" = $1  [["id", 11]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 6ms (ActiveRecord: 3.2ms)
+
+
+Started POST "/api/foos" for ::1 at 2017-10-19 12:40:07 +0300
+Processing by FoosController#create as JSON
+  Parameters: {"foo"=>{"name"=>"test1"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2017-10-19 09:40:07.967758"], ["updated_at", "2017-10-19 09:40:07.967758"]]
+  [1m[35m (57.1ms)[0m  COMMIT
+  Rendered foos/_foo.json.jbuilder (0.4ms)
+  Rendered foos/show.json.jbuilder (1.9ms)
+Completed 201 Created in 67ms (Views: 6.2ms | ActiveRecord: 57.7ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 14:09:32 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1498.8ms)
+Completed 200 OK in 1541ms (Views: 1541.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 14:09:34 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (1.2ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (3.5ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.3ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/index.json.jbuilder (73.6ms)
+Completed 200 OK in 106ms (Views: 79.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/foos" for ::1 at 2017-10-19 14:30:36 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/foos"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (67.1ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (315.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 14:35:17 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (1516.9ms)
+Completed 200 OK in 1533ms (Views: 1532.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 14:35:20 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (1.2ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (2.7ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.1ms)
+  Rendered foos/_foo.json.jbuilder (1.0ms)
+  Rendered foos/index.json.jbuilder (54.5ms)
+Completed 200 OK in 87ms (Views: 59.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/client-assets/styles.css" for ::1 at 2017-10-19 14:35:36 +0300
+
+
+Started GET "/client-assets/scripts.js" for ::1 at 2017-10-19 14:35:36 +0300
+
+
+Started GET "/" for ::1 at 2017-10-19 14:36:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (501.6ms)
+Completed 200 OK in 518ms (Views: 517.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 14:36:39 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (0.7ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (6.4ms)
+  Rendered foos/_foo.json.jbuilder (2.1ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (2.8ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/index.json.jbuilder (53.1ms)
+Completed 200 OK in 82ms (Views: 63.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/client-assets/styles.css" for ::1 at 2017-10-19 14:36:49 +0300
+
+
+Started GET "/client-assets/scripts.js" for ::1 at 2017-10-19 14:36:49 +0300
+
+
+Started GET "/client/index.html/client-assets/styles.css" for ::1 at 2017-10-19 14:37:12 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/styles.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (60.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (270.7ms)
+
+
+Started GET "/client/index.html/client-assets/scripts.js" for ::1 at 2017-10-19 14:37:12 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/scripts.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (158.9ms)
+
+
+Started GET "/client/index.html/client-assets/styles.css" for ::1 at 2017-10-19 14:40:52 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/styles.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (43.5ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (238.2ms)
+
+
+Started GET "/client/index.html/client-assets/scripts.js" for ::1 at 2017-10-19 14:40:52 +0300
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html/client-assets/scripts.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (21.8ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (186.5ms)
+
+
+Started GET "/client-assets/styles.css" for ::1 at 2017-10-19 14:59:38 +0300
+
+
+Started GET "/client-assets/scripts.js" for ::1 at 2017-10-19 14:59:38 +0300
+
+
+Started GET "/spa-demo/pages/main.html" for ::1 at 2017-10-19 14:59:39 +0300
+
+ActionController::RoutingError (No route matches [GET] "/spa-demo/pages/main.html"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (204.3ms)
+
+
+Started GET "/public/client" for ::1 at 2017-10-19 15:02:20 +0300
+
+ActionController::RoutingError (No route matches [GET] "/public/client"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (191.9ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 15:02:44 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (294.2ms)
+Completed 200 OK in 304ms (Views: 303.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spa-demo/layout.self-93faddccb45f4f1c38000de2aac4fd66a0b521d4be4b5007626798428fa703a2.css?body=1" for ::1 at 2017-10-19 15:02:44 +0300
+
+
+Started GET "/assets/spa-demo.self-914791e765346d07066be8ad42e93234df906fdc8139d60b823504aeadb8978c.css?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/jquery/jquery.self-06c43429d1047ce3f355da574d8a9750209971b8b1b8f264f91f5518c5fcc060.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/jquery2.self-25ca496239ae8641a09627c8aace5863e7676e465fbb4ce81bc7eb78c4d15627.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/jquery.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/bootstrap.self-97b6f396f1adb96e6d17bbab5c71d0176ec28a99413c62d21e68e6ed46530268.css?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/angular/angular.self-7e0b2baf4553bcd25cbb45cbe35556b3c2fbcb170db636503b5bee55a75e7b9b.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/angular-ui-router/angular-ui-router.self-8d1a567702decda3c48178b8db54b5b9dbe23f0f7b137aca5d7f2fa843efc7e1.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/angular-ui-router.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/angular-resource/angular-resource.self-7b851344b1a492da37e76df63192ad79f4329101cce7e0de82613e234810e484.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/angular-resource.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/spa-demo/app.module.self-3e460bfc5fd473d3e7b2c827592b2fe38ff8e1a709a6648b143f03f0d0ffe2e8.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/spa-demo/app.router.self-6352452f80c5a8e54423922833953d7a1d7364db12b79b52fd2ee92db1f3589b.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/spa-demo/app.constant.self-3fd2dc29ee947460849758157c8eaf3c6de50d0e1036f564f04ffbe532b5dee2.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos.service.self-7f11cf4f8b53cb6906bb820a2be376f494344cc7c93cd5573ce2a7c1cee8917d.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/spa-demo.self-a68ec20f01facc65604404ac9cc58ef6d12d473e7175df65bd581a4aa432158f.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos.controller.self-2fa206c669bf51d9d1e127b3668c45a2846b654b0f10886d3b1de90d6e2466bd.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos.directive.self-690f368d9b38a70e63edf0c3846d8e25225d6c269c5559a325654d473c3ccbe1.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos.module.self-0ef17cf4219d31f6c554e4b98f958fa7f4b14410870139b93379f6de6738975c.js?body=1" for ::1 at 2017-10-19 15:02:45 +0300
+
+
+Started GET "/assets/spa-demo/pages/main-41da565308a0c776a7cea5ea34a10cc255b086e8f5fed1fd19d216a3861d1e50.html" for ::1 at 2017-10-19 15:02:46 +0300
+
+
+Started GET "/assets/spa-demo/foos/foos-7e6c6f5e12e7bb68005a2d80cdf04a32794f799fdcbee5f3d650dc7126ea13f6.html" for ::1 at 2017-10-19 15:02:46 +0300
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 15:02:46 +0300
+Processing by FoosController#index as JSON
+  [1m[35mFoo Load (0.7ms)[0m  SELECT "foos".* FROM "foos"
+  Rendered foos/_foo.json.jbuilder (2.6ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.4ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/index.json.jbuilder (59.0ms)
+Completed 200 OK in 102ms (Views: 64.9ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/api/foos" for ::1 at 2017-10-19 15:02:56 +0300
+Processing by FoosController#create as JSON
+  Parameters: {"foo"=>{"name"=>"aaa"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "foos" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "aaa"], ["created_at", "2017-10-19 12:02:56.644606"], ["updated_at", "2017-10-19 12:02:56.644606"]]
+  [1m[36m (16.4ms)[0m  [1mCOMMIT[0m
+  Rendered foos/_foo.json.jbuilder (0.8ms)
+  Rendered foos/show.json.jbuilder (2.9ms)
+Completed 201 Created in 114ms (Views: 33.0ms | ActiveRecord: 17.5ms)
+
+
+Started DELETE "/api/foos/13" for ::1 at 2017-10-19 15:03:19 +0300
+Processing by FoosController#destroy as JSON
+  Parameters: {"id"=>"13"}
+  [1m[36mFoo Load (0.4ms)[0m  [1mSELECT  "foos".* FROM "foos" WHERE "foos"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "foos" WHERE "foos"."id" = $1[0m  [["id", 13]]
+  [1m[35m (15.7ms)[0m  COMMIT
+Completed 204 No Content in 93ms (ActiveRecord: 20.7ms)
+
+
+Started GET "/" for ::1 at 2017-10-19 15:17:57 +0300
+Processing by UiController#index as HTML
+  Rendered ui/index.html.erb (295.3ms)
+Completed 200 OK in 297ms (Views: 297.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/foos" for ::1 at 2017-10-19 15:17:58 +0300
+Processing by FoosController#index as JSON
+  [1m[36mFoo Load (0.6ms)[0m  [1mSELECT "foos".* FROM "foos"[0m
+  Rendered foos/_foo.json.jbuilder (1.9ms)
+  Rendered foos/_foo.json.jbuilder (1.6ms)
+  Rendered foos/_foo.json.jbuilder (1.8ms)
+  Rendered foos/_foo.json.jbuilder (1.2ms)
+  Rendered foos/_foo.json.jbuilder (5.4ms)
+  Rendered foos/index.json.jbuilder (20.8ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/client/index.html" for ::1 at 2017-10-19 15:45:10 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/client/index.html"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (88.1ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/giyas/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (370.7ms)
