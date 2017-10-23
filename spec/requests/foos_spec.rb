@@ -1,10 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe "Foos", type: :request do
-  describe "GET /foos" do
-    it "works! (now write some real specs)" do
-      get foos_path
-      expect(response).to have_http_status(200)
+describe Foo, type: :model do
+  context "valid Foo" do
+    it "created Foo will be persistend, have a name, and be Found" do
+      foo=Foo.create(:name=>"test")
+      expect(foo).to be_persisted
+      expect(foo.name).to eq("test")
+      expect(Foo.find(foo.id)).to_not be_nil
+      # binding.pry
     end
   end
 end
