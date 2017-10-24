@@ -12,6 +12,7 @@
 # the additional setup, and require it from the spec files that actually need
 # it.
 require 'mongoid-rspec'
+require_relative 'support/database_cleaners.rb'
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
