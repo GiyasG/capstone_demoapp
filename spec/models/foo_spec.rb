@@ -6,7 +6,12 @@ include_context 'db_cleanup', :transaction
 # include_context 'db_scope'
 
 before(:all) do
-  @foo=Foo.create(:name=>"test")
+  # @foo=Foo.create(:name=>"test")
+  # @foo=Foo.create()
+  # @foo.name="test"
+  # @foo.save
+  # @foo=FactoryGirl.create(:foo)
+  @foo=FactoryGirl.create(:foo, :name=>"test") # To ovveride faker made name
 end
 let(:foo) {Foo.find(@foo.id)}
 
