@@ -9,8 +9,8 @@ def parsed_body
 end
 
   describe "RDBMS-backed" do
-    before(:each) {Foo.delete_all}
-    after(:each) {Foo.delete_all}
+    # before(:each) {Foo.delete_all}
+    # after(:each) {Foo.delete_all}
 
     it "create RDBMS-backed model" do
       object=Foo.create(:name => "test")
@@ -25,8 +25,8 @@ end
     end
   end
     describe "MongoDB-backed" do
-      before(:each) {Bar.delete_all}
-      after(:each) {Bar.delete_all}
+      # before(:each) {Bar.delete_all}
+      # after(:each) {Bar.delete_all}
       it "create MongoDB-backed model" do
         object=Bar.create(:name => "test")
         expect(Bar.find(object.id).name).to eq("test")
