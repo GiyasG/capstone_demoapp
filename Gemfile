@@ -28,7 +28,7 @@ group :development, :test do
   gem 'poltergeist', '~> 1.11.0'
   gem 'selenium-webdriver', '~> 2.53.4'
   gem 'chromedriver-helper', '~>1.0.0'
-  # gem 'launchy', '~>2.4.3'
+  gem 'launchy', '~>2.4.3'
   # gem 'simplecov', '~>0.12', :require=>false
 
 end

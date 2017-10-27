@@ -45,12 +45,12 @@ Capybara.configure do |config|
 #  config.javascript_driver = :selenium
 end
 
-Capybara.register_driver :poltergeist do |app|
-  Capybara::Poltergeist::Driver.new( app,
-    phantomjs_logger: StringIO.new,
-#    logger: STDERR
-    )
-end
+# Capybara.register_driver :poltergeist do |app|
+#   Capybara::Poltergeist::Driver.new( app,
+#     phantomjs_logger: StringIO.new,
+# #    logger: STDERR
+#     )
+# end
 
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
