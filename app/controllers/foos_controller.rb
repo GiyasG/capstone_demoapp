@@ -18,7 +18,8 @@ class FoosController < ApplicationController
       # render json: @foo, status: :created, location: @foo
       render :show, status: :created, location: @foo
     else
-      render json: @foo.errors, status: :unprocessable_entity
+      # render json: @foo.errors, status: :unprocessable_entity
+      render :errors, status: :unprocessable_entity
     end
   end
 
@@ -26,7 +27,8 @@ class FoosController < ApplicationController
     if @foo.update(foo_params)
       head :no_content
     else
-      render json: @foo.errors, status: :unprocessable_entity
+      # render json: @foo.errors, status: :unprocessable_entity
+      render :errors, status: :unprocessable_entity
     end
   end
 

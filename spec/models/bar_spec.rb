@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 require "mongo"
-Mongo::Logger.logger.level = ::Logger::DEBUG
+Mongo::Logger.logger.level = ::Logger::INFO
 # Mongo::Logger.logger.level = ::Logger::INFO
 describe Bar, :type=>:model, :orm=>:mongoid do
   # include Mongoid::Matchers

@@ -40,7 +40,7 @@ end
 gem 'pg', '~> 0.20.0'
 gem 'puma', '~>3.6', '>=3.6.0', :platforms=>:ruby
 gem 'mongoid', '~>5.1', '>=5.1.5'
-gem 'database_cleaner', '~>1.5', '>=1.5.3'
+gem 'database_cleaner', '~>1.5.3' #, '>=1.5.3'
 gem 'factory_girl_rails', '~>4.7', '>=4.7.0'
 gem 'faker', '~>1.6', '>=1.6.6'
 
