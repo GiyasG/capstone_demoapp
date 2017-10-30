@@ -40,7 +40,8 @@ module CapstoneDemoapp
         # origins 'SiteB.com'
         origins '*'
 
-        resource '/api/*',
+        # resource '/api/*',
+        resource '*',
         :headers => :any,
         :methods => [:get, :post, :put, :delete, :options]
       end
