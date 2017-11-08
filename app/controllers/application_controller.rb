@@ -3,7 +3,7 @@ class ApplicationController < ActionController::API
   include DeviseTokenAuth::Concerns::SetUserByToken
   #make the connection between controller action and associated view
   include ActionController::ImplicitRender
-  include Pundit
+  # include Pundit
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
@@ -11,7 +11,7 @@ class ApplicationController < ActionController::API
   rescue_from Mongoid::Errors::DocumentNotFound, with: :record_not_found
   rescue_from Mongoid::Errors::Validations, with: :mongoid_validation_error
   rescue_from ActionController::ParameterMissing, with: :missing_parameter
-  rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+  # rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   protected
     def full_message_error full_message, status
