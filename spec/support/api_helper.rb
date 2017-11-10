@@ -49,7 +49,7 @@ module ApiHelper
   end
 
   def create_resource path, factory, status=:created
-    jpost path, FactoryGirl.attributes_for(factory)
+    jpost path, FactoryBot.attributes_for(factory)
     expect(response).to have_http_status(status) if status
     parsed_body
   end
@@ -92,7 +92,7 @@ module ApiHelper
 end
 
 RSpec.shared_examples "resource index" do |model|
-  let!(:resources) { (1..5).map {|idx| FactoryGirl.create(model) } }
+  let!(:resources) { (1..5).map {|idx| FactoryBot.create(model) } }
   let!(:apply_roles) { apply_organizer user, resources }
   let(:payload) { parsed_body }
 
@@ -107,7 +107,7 @@ RSpec.shared_examples "resource index" do |model|
 end
 
 RSpec.shared_examples "show resource" do |model|
-  let(:resource) { FactoryGirl.create(model) }
+  let(:resource) { FactoryBot.create(model) }
   let!(:apply_roles) { apply_organizer user, resource }
   let(:payload) { parsed_body }
   let(:bad_id) { 1234567890 }
@@ -132,7 +132,7 @@ RSpec.shared_examples "show resource" do |model|
 end
 
 RSpec.shared_examples "create resource" do |model|
-  let(:resource_state) { FactoryGirl.attributes_for(model) }
+  let(:resource_state) { FactoryBot.attributes_for(model) }
   let(:payload)        { parsed_body }
   let(:resource_id)    { payload["id"] }
 
@@ -153,11 +153,11 @@ end
 
 RSpec.shared_examples "modifiable resource" do |model|
   let(:resource) do
-    jpost send("#{model}s_path"), FactoryGirl.attributes_for(model)
+    jpost send("#{model}s_path"), FactoryBot.attributes_for(model)
     expect(response).to have_http_status(:created)
     parsed_body
   end
-  let(:new_state) { FactoryGirl.attributes_for(model) }
+  let(:new_state) { FactoryBot.attributes_for(model) }
 
   it "can update #{model}" do
       # change to new state

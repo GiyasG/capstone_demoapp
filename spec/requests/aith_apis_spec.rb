@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Authentication Api", type: :request do
   include_context "db_cleanup_each", :transaction
-  let(:user_props) { FactoryGirl.attributes_for(:user) }
+  let(:user_props) { FactoryBot.attributes_for(:user) }
 
   context "sign-up" do
     context "valid registration" do

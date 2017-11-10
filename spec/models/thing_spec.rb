@@ -4,7 +4,7 @@ RSpec.describe Thing, type: :model do
   include_context "db_cleanup_each"
 
   context "valid thing" do
-    let(:thing) { FactoryGirl.create(:thing) }
+    let(:thing) { FactoryBot.create(:thing) }
 
     it "creates new instance" do
       db_thing=Thing.find(thing.id)
@@ -13,7 +13,7 @@ RSpec.describe Thing, type: :model do
   end
 
   context "invalid thing" do
-    let(:thing) { FactoryGirl.build(:thing, :name=>nil) }
+    let(:thing) { FactoryBot.build(:thing, :name=>nil) }
 
     it "provides error messages" do
       expect(thing.validate).to be false

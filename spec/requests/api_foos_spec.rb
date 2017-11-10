@@ -4,7 +4,7 @@ RSpec.describe "Foo API", type: :request do
   include_context "db_cleanup_each", :transaction
 
   context "caller requests list of Foos" do
-    let!(:foos) { (1..5).map {|idx| FactoryGirl.create(:foo) } }
+    let!(:foos) { (1..5).map {|idx| FactoryBot.create(:foo) } }
 
     it "returns all instances" do
       get foos_path, {:sample1=>"param",:sample2=>"param"},
@@ -21,7 +21,7 @@ RSpec.describe "Foo API", type: :request do
   end
 
   context "a specific Foo exists" do
-    let(:foo) { FactoryGirl.create(:foo) }
+    let(:foo) { FactoryBot.create(:foo) }
     let(:bad_id) { 1234567890 }
 
     it "returns Foo when using correct ID" do
@@ -50,7 +50,7 @@ RSpec.describe "Foo API", type: :request do
   end
 
   context "create a new Foo" do
-    let(:foo_state) { FactoryGirl.attributes_for(:foo) }
+    let(:foo_state) { FactoryBot.attributes_for(:foo) }
 
     it "can create with provided name" do
       jpost foos_path, foo_state
@@ -71,7 +71,7 @@ RSpec.describe "Foo API", type: :request do
   end
 
   context "existing Foo" do
-    let(:foo) { FactoryGirl.create(:foo) }
+    let(:foo) { FactoryBot.create(:foo) }
     let(:new_name) { "testing" }
 
     it "can update name" do

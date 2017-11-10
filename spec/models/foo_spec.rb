@@ -10,8 +10,8 @@ before(:all) do
   # @foo=Foo.create()
   # @foo.name="test"
   # @foo.save
-  # @foo=FactoryGirl.create(:foo)
-  @foo=FactoryGirl.create(:foo, :name=>"test") # To ovveride faker made name
+  # @foo=FactoryBot.create(:foo)
+  @foo=FactoryBot.create(:foo, :name=>"test") # To ovveride faker made name
 end
 let(:foo) {Foo.find(@foo.id)}
 

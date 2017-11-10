@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Images", type: :request do
   include_context "db_cleanup_each"
-  let(:account) { signup FactoryGirl.attributes_for(:user) }
+  let(:account) { signup FactoryBot.attributes_for(:user) }
 
   context "quick API check" do
     let!(:user) { login account }
@@ -23,7 +23,7 @@ RSpec.describe "Images", type: :request do
 
   shared_examples "cannot update" do |status|
     it "update fails with #{status}" do
-      jput image_path(image_id), FactoryGirl.attributes_for(:image)
+      jput image_path(image_id), FactoryBot.attributes_for(:image)
       expect(response).to have_http_status(status)
       expect(parsed_body).to include("errors")
     end
@@ -98,9 +98,9 @@ RSpec.describe "Images", type: :request do
   end
 
   describe "Image authorization" do
-    let(:alt_account) { signup FactoryGirl.attributes_for(:user) }
-    let(:admin_account) { apply_admin(signup FactoryGirl.attributes_for(:user)) }
-    let(:image_props) { FactoryGirl.attributes_for(:image, :with_caption) }
+    let(:alt_account) { signup FactoryBot.attributes_for(:user) }
+    let(:admin_account) { apply_admin(signup FactoryBot.attributes_for(:user)) }
+    let(:image_props) { FactoryBot.attributes_for(:image, :with_caption) }
     let(:image_resources) { 3.times.map { create_resource images_path, :image } }
     let(:image_id)  { image_resources[0]["id"] }
     let(:image)     { Image.find(image_id) }
@@ -139,8 +139,8 @@ RSpec.describe "Images", type: :request do
   describe "role merge" do
     it "returns one image with flattened roles" do
       roles=["foo","bar","baz"]
-      originator=FactoryGirl.create(:user)
-      image=FactoryGirl.create(:image,
+      originator=FactoryBot.create(:user)
+      image=FactoryBot.create(:image,
                                :creator_id=>originator.id);
       roles.each do |role|
         originator.add_role(role,image).save

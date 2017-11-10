@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "Things", type: :request do
   include_context "db_cleanup_each"
   #originator becomes organizer after creation
-  let(:originator) { apply_originator(signup(FactoryGirl.attributes_for(:user)), Thing) }
+  let(:originator) { apply_originator(signup(FactoryBot.attributes_for(:user)), Thing) }
 
   context "quick API check" do
     let!(:user) { login originator }
@@ -124,8 +124,8 @@ RSpec.describe "Things", type: :request do
   end
 
   describe "Thing authorization" do
-    let(:account)  { signup FactoryGirl.attributes_for(:user) }
-    let(:thing_props)   { FactoryGirl.attributes_for(:thing, :with_fields) }
+    let(:account)  { signup FactoryBot.attributes_for(:user) }
+    let(:thing_props)   { FactoryBot.attributes_for(:thing, :with_fields) }
     let(:thing_resources) { 3.times.map { create_resource things_path, :thing } }
     let(:thing_id)   { thing_resources[0]["id"] }
     let(:thing)      { Thing.find(thing_id) }

@@ -4,10 +4,10 @@ RSpec.describe ThingImage, type: :model do
   include_context "db_cleanup_each"
 
   context "valid thing" do
-    let(:thing) { FactoryGirl.build(:thing) }
+    let(:thing) { FactoryBot.build(:thing) }
 
     it "build image for thing and save" do
-      ti = FactoryGirl.build(:thing_image, :thing=>thing)
+      ti = FactoryBot.build(:thing_image, :thing=>thing)
       ti.save!
       expect(thing).to be_persisted
       expect(ti).to be_persisted
@@ -16,7 +16,7 @@ RSpec.describe ThingImage, type: :model do
     end
 
     it "relate multiple images" do
-      thing.thing_images << FactoryGirl.build_list(:thing_image, 3, :thing=>thing)
+      thing.thing_images << FactoryBot.build_list(:thing_image, 3, :thing=>thing)
       thing.save!
       expect(Thing.find(thing.id).thing_images.size).to eq(3)
 
@@ -26,7 +26,7 @@ RSpec.describe ThingImage, type: :model do
     end
 
     it "build images using factory" do
-      thing=FactoryGirl.create(:thing, :with_image, :image_count=>2)
+      thing=FactoryBot.create(:thing, :with_image, :image_count=>2)
       expect(Thing.find(thing.id).thing_images.size).to eq(2)
       thing.thing_images.each do |ti|
         expect(ti.image.things.first).to eql(thing) #same instance
@@ -35,7 +35,7 @@ RSpec.describe ThingImage, type: :model do
   end
 
   context "related thing and image" do
-    let(:thing) { FactoryGirl.create(:thing, :with_image) }
+    let(:thing) { FactoryBot.create(:thing, :with_image) }
     let(:thing_image) { thing.thing_images.first }
     before(:each) do
       #sanity check that objects and relationships are in place

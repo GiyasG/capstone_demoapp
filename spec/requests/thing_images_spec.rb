@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "ThingImages", type: :request do
   include_context "db_cleanup_each"
   #originator becomes organizer after creation
-  let(:originator) { apply_originator(signup(FactoryGirl.attributes_for(:user)), Thing) }
+  let(:originator) { apply_originator(signup(FactoryBot.attributes_for(:user)), Thing) }
 
   describe "manage thing/image relationships" do
     let!(:user) { login originator }
@@ -11,7 +11,7 @@ RSpec.describe "ThingImages", type: :request do
       let(:thing) { create_resource(things_path, :thing, :created) }
       let(:image) { create_resource(images_path, :image, :created) }
       let(:thing_image_props) {
-        FactoryGirl.attributes_for(:thing_image, :image_id=>image["id"])
+        FactoryBot.attributes_for(:thing_image, :image_id=>image["id"])
       }
 
       it "can associate image with thing" do
@@ -135,7 +135,7 @@ RSpec.describe "ThingImages", type: :request do
 
 
   describe "ThingImage Authn policies" do
-    let(:account)         { signup FactoryGirl.attributes_for(:user) }
+    let(:account)         { signup FactoryBot.attributes_for(:user) }
     let(:thing_resources) { 3.times.map { create_resource(things_path, :thing, :created) } }
     let(:image_resources) { 4.times.map { create_resource(images_path, :image, :created) } }
     let(:things)          { thing_resources.map {|t| Thing.find(t["id"]) } }

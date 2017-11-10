@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :image do
     sequence(:caption) {|n| n%2==0 ? nil : Faker::Lorem.sentence(3).chomp(".") }
     creator_id 1

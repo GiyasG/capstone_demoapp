@@ -10,10 +10,10 @@ RSpec.feature "ManageFoos", type: :feature, :js=>true do
   FOO_FORM_XPATH=FooUiHelper::FOO_FORM_XPATH
   FOO_LIST_XPATH=FooUiHelper::FOO_LIST_XPATH
 
-  let(:foo_state) { FactoryGirl.attributes_for(:foo) }
+  let(:foo_state) { FactoryBot.attributes_for(:foo) }
 
   feature "view existing Foos" do
-    let(:foos) {(1..5).map{FactoryGirl.create(:foo)}.sort_by {|v| v["name"]}}
+    let(:foos) {(1..5).map{FactoryBot.create(:foo)}.sort_by {|v| v["name"]}}
 
     scenario "when no instances exist" do
       visit root_path
@@ -37,7 +37,7 @@ RSpec.feature "ManageFoos", type: :feature, :js=>true do
   end
 
   feature "add new Foo" do
-    let(:foo_state) {FactoryGirl.attributes_for(:foo)}
+    let(:foo_state) {FactoryBot.attributes_for(:foo)}
     background(:each) do
       visit root_path
       expect(page).to have_css("h3", text:"Foos") # on the Foos page
@@ -82,7 +82,7 @@ RSpec.feature "ManageFoos", type: :feature, :js=>true do
           # find(:xpath, "//button[@ng-click='foosVM.create()']").click
           find(:xpath, "//button[contains(@ng-click,'create()')]").click
           within(:xpath,FOO_LIST_XPATH) do
-            expect(page).to have_xpath("//li", count:1)
+            expect(page).to have_xpath(".//li", count:1)
             # expect(page).to have_xpath("//*[text()='#{foo_state[:name]}']")
             expect(page).to have_content(foo_state[:name])
           end
@@ -97,7 +97,7 @@ RSpec.feature "ManageFoos", type: :feature, :js=>true do
 
     scenario "can be updated" do
       existing_name=foo_state[:name]
-      new_name=FactoryGirl.attributes_for(:foo)[:name]
+      new_name=FactoryBot.attributes_for(:foo)[:name]
 
       within(:xpath,FOO_LIST_XPATH) do
         expect(page).to have_css("li", :count=>1)
